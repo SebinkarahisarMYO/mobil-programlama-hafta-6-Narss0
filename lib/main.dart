@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -42,7 +43,46 @@ class _AnaEkranState extends State<AnaEkran> {
               //--------------
               //--------------Kodları aşağıya yazınız.
               //--------------
-              Column()
+              Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          Container(
+              height: 100,
+              color: const Color.fromARGB(255, 158, 140, 138),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: <Widget>[
+                  Spacer(),
+                  Container(
+                      width: 50,
+                      height: 50,
+                      color: Color.fromARGB(88, 233, 180, 24),
+                      child: Icon(Icons.chat)),
+                  Spacer(),
+                  Container(
+                      width: 50,
+                      height: 50,
+                      color: Color.fromARGB(88, 233, 180, 24),
+                      child: Icon(Icons.school)),
+                  Spacer(),
+                  Container(
+                    width: 50,
+                    height: 50,
+                    color: Color.fromARGB(88, 233, 180, 24),
+                    child: Icon(Icons.people),
+                  ),
+                  Spacer(),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Color.fromARGB(88, 233, 180, 24),
+                    child: Icon(Icons.call),
+                  ),
+                  Spacer(),
+                ],
+              ))
+        ],
+      )
           //--------------
           //--------------
           //--------------
